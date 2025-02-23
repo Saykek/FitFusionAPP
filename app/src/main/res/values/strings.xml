@@ -6,6 +6,7 @@
     <string name="txtUser">Usuario</string>
     <string name="txt_contraseña">*</string>
     <string name="nombrePerfil">Perfil Usuario</string>
+    <string name="nombreOpcionMenus">Menús</string>
 
     <!-- BOTONES -->
 
@@ -22,5 +23,32 @@
     <string name="btnMenus">Menús</string>
     <string name="btnRecetario">Recetario</string>
     <string name="btnListaCompra">Lista de la Compra</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <!-- Lista de meses -->
+    <string-array name="lista_meses">
+        <item>Enero</item>
+        <item>Febrero</item>
+        <item>Marzo</item>
+        <item>Abril</item>
+        <item>Mayo</item>
+        <item>Junio</item>
+        <item>Julio</item>
+        <item>Agosto</item>
+        <item>Septiembre</item>
+        <item>Octubre</item>
+        <item>Noviembre</item>
+        <item>Diciembre</item>
+    </string-array>
+
+    <!-- Lista de semanas (puedes adaptarlas según el mes) -->
+    <string-array name="lista_semanas">
+        <item>Semana 1</item>
+        <item>Semana 2</item>
+        <item>Semana 3</item>
+        <item>Semana 4</item>
+    </string-array>
 
 </resources>

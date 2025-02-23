@@ -14,6 +14,8 @@ Proyecto Móviles fin de 2ª evaluación 2025
 
 * FRAGMENTOS
 
+  - Fragmento de menus ***** ok
+
 
 * PERMISOS
 
@@ -25,3 +27,10 @@ Proyecto Móviles fin de 2ª evaluación 2025
 
 
 * CLEAN
+
+EXTRAS:
+
+  - Spinner en meses para seleccionar el menu
+
+  - Toolbar ( pendiente quitar nombre app o hacer algo mas vistoso)
+    añadir esto en las actividades :   setSupportActionBar(binding.toolbar)

@@ -35,15 +35,18 @@ class InicioSesion : AppCompatActivity() {
                 val nombreGuardado = leer()     // Leer el nombre guardado en SharedPreferences
             if (!nombreGuardado.isNullOrEmpty()) {     // Verificar si el nombre no es null y no está vacío
                 binding.txtInputUser.setText(nombreGuardado)    // Si hay un nombre guardado, ponerlo en el EditText
-                val toast = Toast.makeText(this,"el nombre es $nombreGuardado", Toast.LENGTH_LONG)
-                toast.show()
+
                 // Cambio de pantalla
                 val intent = Intent(this, MenuPrincipal::class.java)
                 intent.putExtra("nombreUsuario", nombreIngresado)
                 startActivity(intent)
+            }else{
+                val toast = Toast.makeText(this,"Por favor, rellena todos los campos", Toast.LENGTH_LONG)
+                    toast.show()
+                }
            }
         }
-    }
+
 
 
 // PERSISTENCIA DE PREFERENCIAS

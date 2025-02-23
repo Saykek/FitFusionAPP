@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenusFragment">
+
+    <!-- Spinner para elegir el mes -->
+    <Spinner
+        android:id="@+id/spnMes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp" />
+
+    <!-- Contenedor para los botones de las semanas -->
+    <LinearLayout
+        android:id="@+id/linearSemanas"
+        android:layout_width="match_parent"
+        android:layout_height="372dp"
+        android:layout_marginTop="32dp"
+        android:orientation="vertical" />
+
+
+</FrameLayout>

@@ -2,4 +2,14 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="blue">#80D8FF</color>
+    <color name="red">#FF0000</color>
+
+
+
+        <color name="colorPrimary">#6200EE</color> <!-- Color de fondo para el Toolbar -->
+        <color name="colorPrimaryDark">#3700B3</color> <!-- Color para la barra de estado (opcional) -->
+        <color name="colorAccent">#03DAC5</color> <!-- Color de acento para elementos de la interfaz -->
+        <color name="colorBackground">#FFFFFF</color> <!-- Color de fondo general -->
+
 </resources>

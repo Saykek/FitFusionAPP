@@ -46,7 +46,12 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
-    implementation (libs.androidx.preference) //preferencias
+    implementation (libs.androidx.preference)
+    implementation(libs.androidx.mediarouter) //preferencias
+    // FRAGMENTOS
+    val fragment_version = "1.8.3"
+    implementation("androidx.fragment:fragment-ktx:$fragment_version")
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
