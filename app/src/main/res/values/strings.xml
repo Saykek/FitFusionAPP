@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">FitFusionApp</string>
+    <string name="txtRecPassword">Recuperar Contraseña</string>
+    <string name="imgLogoDesc">Logotipo del creador del contenido</string>
+    <string name="msg_click_boton">Vamos allá</string>
+    <string name="txtUser">Usuario</string>
+    <string name="txt_contraseña">*</string>
+    <string name="nombrePerfil">Perfil Usuario</string>
+
+    <!-- BOTONES -->
+
+    <string name="btnMiActividad">Mi Actividad</string>
+    <string name="btnIniciarSesion">Iniciar Sesión</string>
+    <string name="btnRegistro">Darse de Alta</string>
+    <string name="btnEmail">Correo Electrónico</string>
+    <string name="btnPassword">Contraseña</string>
+    <string name="btnIr">Entrar</string>
+    <string name="btnEntrenamiento">Entrenamiento</string>
+    <string name="btnClases">Clases</string>
+    <string name="btnDatosFisicos">Datos Físicos</string>
+    <string name="btnNutricion">Nutrición</string>
+    <string name="btnMenus">Menús</string>
+    <string name="btnRecetario">Recetario</string>
+    <string name="btnListaCompra">Lista de la Compra</string>
+
+</resources>
