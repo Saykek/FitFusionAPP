@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
-    alias(libs.plugins.kotlin.android)
+    alias(libs.plugins.kotlin.android) version "2.0.21"  // Asegúrate de usar la misma versión
+    id("com.google.devtools.ksp") version "2.0.21-1.0.27"  // Asegúrate de que esta versión esté alineada con la de Kotlin
 }
 
 android {
@@ -40,6 +41,12 @@ android {
 }
 
 dependencies {
+    //BASE DE DATOS
+    val room_version = "2.6.1"
+    implementation("androidx.room:room-runtime:$room_version")
+    implementation("androidx.room:room-ktx:$room_version")
+    ksp("androidx.room:room-compiler:$room_version")
+
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
@@ -48,9 +55,14 @@ dependencies {
     implementation(libs.androidx.constraintlayout)
     implementation (libs.androidx.preference)
     implementation(libs.androidx.mediarouter) //preferencias
+
     // FRAGMENTOS
     val fragment_version = "1.8.3"
     implementation("androidx.fragment:fragment-ktx:$fragment_version")
+
+
+
+
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)

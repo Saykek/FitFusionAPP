@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:title="Entrenamiento"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar" />
+
+    <!-- Spinner para seleccionar el objetivo de entrenamiento -->
+    <Spinner
+        android:id="@+id/spinnerObjetivo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- Spinner para seleccionar la rutina -->
+    <Spinner
+        android:id="@+id/spinnerRutina"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- Spinner para seleccionar el nivel de dificultad -->
+    <Spinner
+        android:id="@+id/spinnerDificultad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- Spinner para elegir si es entrenamiento en casa o en gimnasio -->
+    <Spinner
+        android:id="@+id/spinnerEnCasa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- Spinner para elegir si es entrenamiento al aire libre -->
+    <Spinner
+        android:id="@+id/spinnerAireLibre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- Spinner para seleccionar la duración del entrenamiento -->
+    <Spinner
+        android:id="@+id/spinnerDuracion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- Aquí agregamos el RecyclerView más tarde, donde se mostrarán los ejercicios -->
+</LinearLayout>
+

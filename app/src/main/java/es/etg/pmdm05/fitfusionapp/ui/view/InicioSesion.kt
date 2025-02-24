@@ -1,19 +1,10 @@
-package es.etg.pmdm05.fitfusionapp
+package es.etg.pmdm05.fitfusionapp.ui.view
 
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
-import android.view.View
-import android.widget.Button
-import android.widget.EditText
 import android.widget.Toast
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import es.etg.pmdm05.fitfusionapp.databinding.ActivityInicioSesionBinding
-import es.etg.pmdm05.fitfusionapp.databinding.ActivityMainBinding
-
 
 class InicioSesion : AppCompatActivity() {
 
@@ -41,7 +32,8 @@ class InicioSesion : AppCompatActivity() {
                 intent.putExtra("nombreUsuario", nombreIngresado)
                 startActivity(intent)
             }else{
-                val toast = Toast.makeText(this,"Por favor, rellena todos los campos", Toast.LENGTH_LONG)
+                val toast =
+                    Toast.makeText(this, "Por favor, rellena todos los campos", Toast.LENGTH_LONG)
                     toast.show()
                 }
            }
@@ -65,5 +57,3 @@ class InicioSesion : AppCompatActivity() {
         return nombre
     }
     }
-
-

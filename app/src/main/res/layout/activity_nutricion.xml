@@ -30,7 +30,7 @@
         app:layout_constraintTop_toBottomOf="@+id/btnMenus" />
 
     <Button
-        android:id="@+id/btnListaCompra"
+        android:id="@+id/btnEntrenamiento"
         android:layout_width="330dp"
         android:layout_height="50dp"
         android:layout_marginStart="40dp"

@@ -1,13 +1,9 @@
-package es.etg.pmdm05.fitfusionapp
+package es.etg.pmdm05.fitfusionapp.ui.view
 
 import android.content.Intent
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
-import androidx.annotation.StringRes
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
-import es.etg.pmdm05.fitfusionapp.databinding.ActivityMainBinding
+import es.etg.pmdm05.fitfusionapp.R
 import es.etg.pmdm05.fitfusionapp.databinding.ActivityMenuPrincipalBinding
 
 class MenuPrincipal : AppCompatActivity() {
@@ -34,6 +30,10 @@ class MenuPrincipal : AppCompatActivity() {
 // BOTONES
         binding.btnNutricion.setOnClickListener {
             val intent: Intent = Intent(this, Nutricion::class.java)
+            startActivity(intent)
+        }
+        binding.btnEntrenamiento.setOnClickListener {
+            val intent:Intent = Intent(this, Entrenamiento::class.java)
             startActivity(intent)
         }
         }

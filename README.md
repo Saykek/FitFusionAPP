@@ -19,6 +19,8 @@ Proyecto Móviles fin de 2ª evaluación 2025
 
 * PERMISOS
 
+    - Permiso de localizacion y de contactos **** ok
+
 
 * SERVICIOS REST
 

@@ -1,14 +1,9 @@
-package es.etg.pmdm05.fitfusionapp
+package es.etg.pmdm05.fitfusionapp.ui.view
 
 import android.os.Bundle
 import android.view.WindowManager
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.replace
-import es.etg.pmdm05.fitfusionapp.databinding.ActivityMainBinding
 import es.etg.pmdm05.fitfusionapp.databinding.ActivityNutricionBinding
 
 class Nutricion : AppCompatActivity() {
