@@ -1,15 +1,13 @@
 package es.etg.pmdm05.fitfusionapp.ui.view
 
 import android.os.Bundle
+import android.view.View
+import android.widget.AdapterView
 import android.widget.ArrayAdapter
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import es.etg.pmdm05.fitfusionapp.R
 import es.etg.pmdm05.fitfusionapp.databinding.ActivityEntrenamientoBinding
-import es.etg.pmdm05.fitfusionapp.databinding.ActivityInicioSesionBinding
-import es.etg.pmdm05.fitfusionapp.databinding.FragmentMenusBinding
+import es.etg.pmdm05.fitfusionapp.ui.fragment.ObjetivoFragment
 
 class Entrenamiento : AppCompatActivity() {
 
@@ -19,38 +17,77 @@ class Entrenamiento : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityEntrenamientoBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        setSupportActionBar(binding.toolbar)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        supportActionBar?.title = "Entrenamiento"
 // Configurar los Spinners
-        configurarSpinners()
+        configurarSpinner()
     }
 
-    private fun configurarSpinners() {
-        // Lista de objetivos (por ejemplo, fuerza, resistencia, hipertrofia)
-        val objetivos = listOf("Fuerza", "Resistencia", "Hipertrofia")
+    private fun configurarSpinner() {
 
-        // Lista de rutinas (Weider, Push, Full Body)
-        val rutinas = listOf("Weider", "Push", "Full Body")
+        val opciones = arrayOf( // Opciones para el Spinner (categorías generales)
+            "Por Objetivo",
+            "Por Rutina",
+            "Nivel de Dificultad",
+            "En Casa",
+            "Al Aire Libre",
+            "Duración"
+        )
 
-        // Configurar el Spinner para el objetivo de entrenamiento
-        val objetivosAdapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, objetivos)
-        objetivosAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
-        binding.spinnerObjetivo.adapter = objetivosAdapter
+        // Crear el adapter para el Spinner
+        val adapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, opciones)
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+        binding.spinnerOpciones.adapter = adapter
 
-        // Configurar el Spinner para la rutina de entrenamiento
-        val rutinasAdapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, rutinas)
-        rutinasAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
-        binding.spinnerRutina.adapter = rutinasAdapter
+        // Listener para manejar la selección
+        binding.spinnerOpciones.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
+            override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
+                val selectedOption = parent?.getItemAtPosition(position).toString()
+                // Llamar a la función para mostrar el fragmento relacionado con la opción seleccionada
+                mostrarFragmento(selectedOption)
+            }
 
-        // Aquí escuchamos el cambio de selección en el Spinner de Objetivos
-       /* binding.spinnerObjetivo.setOnItemSelectedListener { _, _, position, _ ->
-            val objetivoSeleccionado = objetivos[position]
-            // Aquí puedes agregar lógica para manejar lo que sucede cuando el usuario selecciona un objetivo
-            // Si tienes más lógica o filtros para los ejercicios, los podrías aplicar aquí
+            override fun onNothingSelected(parent: AdapterView<*>?) {
+                // Si no se selecciona nada, no se hace nada
+            }
+        }
+    }
+    private fun mostrarFragmento(selectedOption: String) {
+        val fragment = when (selectedOption) {
+            "Por Objetivo" -> ObjetivoFragment()  // Fragment para mostrar los objetivos
+            else -> null  // No manejamos otras opciones
         }
 
-        // Escuchar el cambio de selección en el Spinner de Rutinas
-        binding.spinnerRutina.setOnItemSelectedListener { _, _, position, _ ->
-            val rutinaSeleccionada = rutinas[position]
-            // Aquí puedes manejar lo que sucede cuando se selecciona una rutina
-        }*/
+        // Comprobamos si el fragmento es no nulo
+        if (fragment != null) {
+            // Transacción de fragmento: reemplazamos el fragmento actual por el nuevo fragmento
+            supportFragmentManager.beginTransaction()
+                .replace(R.id.fragment_container, fragment)  // R.id.fragment_container es el contenedor de tu fragmento
+                .commit()
+        }
+
+    /*private fun mostrarFragmento(selectedOption: String) {
+        val fragment = when (selectedOption) {
+            "Por Objetivo" -> ObjetivoFragment()  // Fragment para mostrar los objetivos
+           // "Por Rutina" -> RutinaFragment()  // Fragment para mostrar las rutinas
+          //  "Nivel de Dificultad" -> DificultadFragment()  // Fragment para mostrar los niveles de dificultad
+           // "En Casa" -> EnCasaFragment()  // Fragment para mostrar ejercicios en casa
+           // "Al Aire Libre" -> AireLibreFragment()  // Fragment para mostrar ejercicios al aire libre
+           // "Duración" -> DuracionFragment()  // Fragment para mostrar la duración
+           // else -> DefaultFragment()  // Fragment por defecto si no se encuentra la opción
+        }
+
+        // Transacción de fragmento: reemplazamos el fragmento actual por el nuevo fragmento
+        supportFragmentManager.beginTransaction()
+            .replace(R.id.fragment_container, fragment)  // R.id.fragment_container es el contenedor de tu fragmento
+            .commit()*/
     }
+
+
 }
+
+
+

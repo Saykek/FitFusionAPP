@@ -5,6 +5,7 @@ import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import es.etg.pmdm05.fitfusionapp.databinding.ActivityNutricionBinding
+import es.etg.pmdm05.fitfusionapp.ui.fragment.MenusFragment
 
 class Nutricion : AppCompatActivity() {
 

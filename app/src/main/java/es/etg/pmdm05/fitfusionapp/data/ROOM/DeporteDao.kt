@@ -1,4 +1,4 @@
-package es.etg.pmdm05.fitfusionapp.data
+package es.etg.pmdm05.fitfusionapp.data.ROOM
 
 import androidx.room.Dao
 import androidx.room.Insert
@@ -8,7 +8,7 @@ import androidx.room.Query
 interface DeporteDao {
 
     @Insert
-    suspend fun insertDeporte(deporte: DeporteEntity)
+    suspend fun insertDeporte(deporte: DeporteEntity) : Long
 
     @Insert
     suspend fun insertEjercicio(ejercicio: EjercicioEntity)

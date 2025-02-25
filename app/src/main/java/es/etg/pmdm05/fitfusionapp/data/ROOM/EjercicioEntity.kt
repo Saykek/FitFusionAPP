@@ -1,4 +1,4 @@
-package es.etg.pmdm05.fitfusionapp.data
+package es.etg.pmdm05.fitfusionapp.data.ROOM
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey

@@ -1,4 +1,4 @@
-package es.etg.pmdm05.fitfusionapp.data
+package es.etg.pmdm05.fitfusionapp.data.ROOM
 
 
 import androidx.room.Dao
@@ -18,8 +18,8 @@ interface EjercicioDao {
 
     // Obtengo ejercicios de un deporte específico
     @Query("SELECT * FROM ejercicios WHERE deporteId = :deporteId")
-    suspend fun ObtenerEjerciciosPorDeporte(deporteId: Int): List<EjercicioEntity>
+    suspend fun obtenerEjerciciosPorDeporte(deporteId: Int): List<EjercicioEntity>
 
     @Delete
-    suspend fun borratEjercicio(ejercicio: EjercicioEntity)
+    suspend fun borrarEjercicio(ejercicio: EjercicioEntity)
 }

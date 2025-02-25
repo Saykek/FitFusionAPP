@@ -1,4 +1,4 @@
-package es.etg.pmdm05.fitfusionapp.data
+package es.etg.pmdm05.fitfusionapp.data.ROOM
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
@@ -6,7 +6,8 @@ import androidx.room.PrimaryKey
 @Entity (tableName = "deporte")
 data class DeporteEntity(
     @PrimaryKey (autoGenerate = true)
-    val id: Int = 0,
+    val idDeporte: Int = 0,
     val nombre: String,
+    val descripcion: String,
 
 )

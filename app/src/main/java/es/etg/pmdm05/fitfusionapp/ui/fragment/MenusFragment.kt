@@ -1,4 +1,4 @@
-package es.etg.pmdm05.fitfusionapp.ui.view
+package es.etg.pmdm05.fitfusionapp.ui.fragment
 
 import android.os.Bundle
 import android.view.LayoutInflater
