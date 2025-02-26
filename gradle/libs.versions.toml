@@ -1,5 +1,6 @@
 [versions]
 agp = "8.6.0"
+androidPdfViewer = "3.2.0-beta.1"
 kotlin = "2.2.21"
 coreKtx = "1.15.0"
 junit = "4.13.2"
@@ -15,6 +16,7 @@ databindingRuntime = "8.8.1"
 retrofit = "2.10,2"
 
 [libraries]
+android-pdf-viewer = { module = "com.github.barteksc.pdfviewer:android-pdf-viewer", version.ref = "androidPdfViewer" }
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 androidx-preference = { module = "androidx.preference:preference", version.ref = "preference" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
@@ -26,7 +28,7 @@ androidx-activity = { group = "androidx.activity", name = "activity", version.re
 androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
 androidx-mediarouter = { group = "androidx.mediarouter", name = "mediarouter", version.ref = "mediarouter" }
 androidx-databinding-runtime = { group = "androidx.databinding", name = "databinding-runtime", version.ref = "databindingRuntime" }
-retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
+retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
