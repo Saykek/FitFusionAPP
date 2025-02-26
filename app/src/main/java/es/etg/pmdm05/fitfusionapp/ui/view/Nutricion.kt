@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
+import es.etg.pmdm05.fitfusionapp.R
 import es.etg.pmdm05.fitfusionapp.databinding.ActivityNutricionBinding
 import es.etg.pmdm05.fitfusionapp.ui.fragment.MenusFragment
 
@@ -17,10 +18,10 @@ class Nutricion : AppCompatActivity() {
         setContentView(binding.root)
 
 
-/*// TOOLBAR
-        val nombreApp = getString(R.string.app_name)
-        binding.toolbar.setTitle("$nombreApp ")
-        setSupportActionBar(binding.toolbar)*/
+//TOOLBAR
+        val frasesMenus = getString(R.string.frase_menus)
+        binding.toolbar.setTitle("$frasesMenus ")
+        setSupportActionBar(binding.toolbar)
 
 //para que se oculte la actividad
         window.setFlags(

@@ -23,7 +23,7 @@
         android:layout_width="142dp"
         android:layout_height="143dp"
         android:layout_marginStart="144dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="88dp"
         android:layout_marginBottom="27dp"
         android:src="@drawable/rostro_mujer"
         app:layout_constraintBottom_toTopOf="@+id/tv_nombre_usuario"
@@ -36,7 +36,7 @@
         android:layout_width="173dp"
         android:layout_height="31dp"
         android:layout_marginStart="124dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="22dp"
         android:text="@string/nombrePerfil"
         android:textAlignment="center"
         android:textSize="20sp"
@@ -59,7 +59,7 @@
         android:layout_width="330dp"
         android:layout_height="50dp"
         android:layout_marginStart="48dp"
-        android:layout_marginTop="90dp"
+        android:layout_marginTop="60dp"
         android:text="@string/btnMiActividad"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView3" />
@@ -84,34 +84,45 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnClases" />
 
-    <!-- TextView para el título -->
-    <TextView
-        android:id="@+id/txtTitle"
-        android:layout_width="0dp"
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewTiempo"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="24dp"
-        android:layout_marginTop="8dp"
-        android:padding="8dp"
-        android:text="Título del Tiempo"
-        android:textColor="@color/black"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnNutricion" />
-
-    <!-- TextView para el tiempo de hoy -->
-    <TextView
-        android:id="@+id/txtHoy"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="18dp"
-        android:layout_marginTop="8dp"
-        android:padding="8dp"
-        android:text="Hoy: 23°C"
-        android:textColor="@color/black"
-        android:textSize="16sp"
+        android:layout_margin="16dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="4dp"
+        app:cardBackgroundColor="#D3F3F1"
+        app:layout_constraintTop_toBottomOf="@+id/btnNutricion"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtTitle" />
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <!-- Título -->
+            <TextView
+                android:id="@+id/txtTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/frase_tiempo"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <!-- Tiempo de hoy -->
+            <TextView
+                android:id="@+id/txtHoy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"

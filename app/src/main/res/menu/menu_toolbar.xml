@@ -5,7 +5,7 @@
     <item
         android:id="@+id/obtener_tiempo"
         android:icon="@drawable/ico_temperatura"
-        android:title="obtener Tiempo"
+        android:title="@string/obtener_tiempo"
         app:showAsAction="ifRoom" />
 
 </menu>

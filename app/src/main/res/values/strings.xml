@@ -8,6 +8,8 @@
     <string name="nombrePerfil">Perfil Usuario</string>
     <string name="nombreOpcionMenus">Menús</string>
     <string name="frase_menu">Hoy es tu día...</string>
+    <string name="frase_tiempo">¿Vemos qué día hace hoy?</string>
+    <string name="frase_menus">Lo mejor está por venir...</string>
 
     <!-- BOTONES -->
 
@@ -26,6 +28,7 @@
     <string name="btnListaCompra">Lista de la Compra</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="obtener_tiempo">obtener Tiempo</string>
 
 
     <!-- Lista de meses -->

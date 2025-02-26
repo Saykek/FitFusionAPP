@@ -7,9 +7,48 @@
 
 
 
+
         <color name="colorPrimary">#6200EE</color> <!-- Color de fondo para el Toolbar -->
         <color name="colorPrimaryDark">#3700B3</color> <!-- Color para la barra de estado (opcional) -->
         <color name="colorAccent">#03DAC5</color> <!-- Color de acento para elementos de la interfaz -->
         <color name="colorBackground">#FFFFFF</color> <!-- Color de fondo general -->
 
+
+    // COLORES :
+
+    <!-- Verde Aguamarina Claro -->
+    <color name="verde_aguamarina_claro">#D1F3EB</color>
+
+    <!-- Verde Aguamarina -->
+    <color name="verde_aguamarina">#B8E6DB</color>
+
+    <!-- Verde Aguamarina Oscuro -->
+    <color name="verde_aguamarina_oscuro">#A7D8D0</color>
+
+    <!-- Verde Aguamarina Más Oscuro -->
+    <color name="verde_aguamarina_mas_oscuro">#80BEB0</color>
+
+    <!-- Verde Aguamarina Muy Oscuro -->
+    <color name="verde_aguamarina_muy_oscuro">#4C7A6C</color>
+
+    <!-- Verde Pastel Claro -->
+    <color name="verde_pastel_claro">#C9F0D2</color>
+
+    <!-- Verde Pastel Oscuro -->
+    <color name="verde_pastel_oscuro">#7D9A88</color>
+
+    <!-- Verde Agua Claro -->
+    <color name="verde_agua_claro">#A9D6CA</color>
+
+    <!-- Verde Agua Oscuro -->
+    <color name="verde_agua_oscuro">#6E9F8C</color>
+
+    <!-- Verde Suave -->
+    <color name="verde_suave">#A2D4B7</color>
+
+    <!-- Verde Musgo Claro -->
+    <color name="verde_musgo_claro">#D2E8D2</color>
+
+    <!-- Verde Musgo Oscuro -->
+    <color name="verde_musgo_oscuro">#8C9B7F</color>
 </resources>

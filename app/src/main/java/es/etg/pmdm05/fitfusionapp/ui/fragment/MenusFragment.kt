@@ -15,6 +15,8 @@ import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.Spinner
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.Toolbar
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import es.etg.pmdm05.fitfusionapp.R
@@ -39,6 +41,7 @@ class MenusFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         binding = FragmentMenusBinding.inflate(inflater, container, false)
+
 
         spinnerMes = binding.spnMes
         linearSemanas = binding.linearSemanas
@@ -78,14 +81,25 @@ class MenusFragment : Fragment() {
             botonSemana.text = semanas[i]
 
             botonSemana.setOnClickListener {
-
-                if(i == 0) {  // Solo la primera semana mostrará el PDF
-                    val nombreArchivo = "menu1.pdf"  // El archivo PDF a mostrar
-                    mostrarPdf(requireContext(), nombreArchivo, pdfImageView)  // Llamada al método para mostrar el PDF
+                val nombreArchivo = when (i) {
+                    0 -> "menu1.pdf"
+                    1 -> "menu2.pdf"
+                    2 -> "menu3.pdf"
+                    3 -> "menu4.pdf"
+                    else -> ""
+                }
+                // Verificar si el archivo existe y mostrar el PDF
+                if (nombreArchivo.isNotEmpty()) {
+                    mostrarPdf(requireContext(), nombreArchivo, pdfImageView)
                 } else {
-                // Aquí puedes poner un mensaje o realizar una acción cuando se haga clic en las demás semanas
-                Toast.makeText(context, "Aún no disponible para ${semanas[i]}", Toast.LENGTH_SHORT).show()
-            }
+                    // Mostrar un mensaje si el archivo no está disponible
+                    Toast.makeText(
+                        context,
+                        "Aún no disponible para ${semanas[i]}",
+                        Toast.LENGTH_SHORT
+                    ).show()
+                }
+
             }
 
             // Agregar el botón al contenedor LinearLayout

@@ -1,28 +1,45 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.fragment.MenusFragment">
 
-    <!-- Spinner para elegir el mes -->
-    <Spinner
-        android:id="@+id/spnMes"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="16dp" />
 
-    <!-- Contenedor para los botones de las semanas -->
-    <LinearLayout
-        android:id="@+id/linearSemanas"
-        android:layout_width="match_parent"
-        android:layout_height="372dp"
-        android:layout_marginTop="32dp"
-        android:orientation="vertical" />
-
-    <!-- ImageView para mostrar las páginas del PDF -->
     <ImageView
         android:id="@+id/pdfImageView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="32dp" />
+        android:layout_height="353dp"
+        android:layout_marginTop="350dp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Spinner
+            android:id="@+id/spnMes"
+            android:layout_width="375dp"
+            android:layout_height="48dp"
+            android:layout_margin="16dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="135dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="691dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.074" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/linearSemanas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical"
+        android:paddingTop="16dp">
+
+    </LinearLayout>
+
 </FrameLayout>
