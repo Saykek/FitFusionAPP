@@ -9,21 +9,21 @@
     tools:context=".ui.view.MenuPrincipal">
 
     <Button
-        android:id="@+id/btnMiActividad"
+        android:id="@+id/btnNutricion"
         android:layout_width="330dp"
         android:layout_height="50dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="60dp"
-        android:text="@string/btnMiActividad"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/btnNutricion"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+        app:layout_constraintTop_toBottomOf="@+id/btnDatosFisicos" />
 
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="142dp"
         android:layout_height="143dp"
-        android:layout_marginStart="132dp"
-        android:layout_marginTop="108dp"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="100dp"
         android:layout_marginBottom="27dp"
         android:src="@drawable/rostro_mujer"
         app:layout_constraintBottom_toTopOf="@+id/tv_nombre_usuario"
@@ -31,22 +31,12 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:srcCompat="@drawable/rostro_mujer" />
 
-    <Button
-        android:id="@+id/btnDatosFisicos"
-        android:layout_width="330dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="20dp"
-        android:text="@string/btnDatosFisicos"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnClases" />
-
     <TextView
         android:id="@+id/tv_nombre_usuario"
         android:layout_width="173dp"
         android:layout_height="31dp"
-        android:layout_marginStart="116dp"
-        android:layout_marginTop="4dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="30dp"
         android:text="@string/nombrePerfil"
         android:textAlignment="center"
         android:textSize="20sp"
@@ -58,45 +48,85 @@
         android:id="@+id/btnEntrenamiento"
         android:layout_width="330dp"
         android:layout_height="50dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="15dp"
         android:text="@string/btnEntrenamiento"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnMiActividad" />
 
     <Button
-        android:id="@+id/btnNutricion"
+        android:id="@+id/btnMiActividad"
         android:layout_width="330dp"
         android:layout_height="50dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="20dp"
-        android:text="@string/btnNutricion"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="90dp"
+        android:text="@string/btnMiActividad"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnDatosFisicos" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
     <Button
         android:id="@+id/btnClases"
         android:layout_width="330dp"
         android:layout_height="50dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="15dp"
         android:text="@string/btnClases"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnEntrenamiento" />
+
+    <Button
+        android:id="@+id/btnDatosFisicos"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/btnDatosFisicos"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnClases" />
+
+    <!-- TextView para el título -->
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="8dp"
+        android:padding="8dp"
+        android:text="Título del Tiempo"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnNutricion" />
+
+    <!-- TextView para el tiempo de hoy -->
+    <TextView
+        android:id="@+id/txtHoy"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="8dp"
+        android:padding="8dp"
+        android:text="Hoy: 23°C"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitle" />
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="1dp"
+        android:layout_marginTop="4dp"
         android:layout_marginEnd="1dp"
-        android:layout_marginBottom="1dp"
         android:background="?attr/colorPrimary"
+        android:gravity="center"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
-        android:gravity="center"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

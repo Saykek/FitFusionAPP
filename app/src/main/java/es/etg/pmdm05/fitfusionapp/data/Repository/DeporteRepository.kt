@@ -1,5 +1,4 @@
 package es.etg.pmdm05.fitfusionapp.data.Repository
-
 import android.content.Context
 import es.etg.pmdm05.fitfusionapp.data.ROOM.DeporteDao
 import es.etg.pmdm05.fitfusionapp.data.ROOM.EjercicioDao
@@ -30,12 +29,9 @@ class DeporteRepository(context: Context) {
         // Si no hay deportes en la base de datos, los insertamos
         CoroutineScope(Dispatchers.IO).launch {
 
-
             db.cargarDatosBBDD(db) // Llamada al método de carga de datos de la base de datos
         }
     }
-
-
 
     suspend fun obtenerDeportes(): List<Deporte> {  // Función suspendida para obtener la lista de deportes
         // Llamamos al DAO para obtener los deportes de la base de datos

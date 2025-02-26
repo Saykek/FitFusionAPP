@@ -3,7 +3,7 @@
 
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
 
-        <item name="windowNoTitle">true</item> <!-- Opcional si no quieres título en la barra de acciones -->
+        <item name="windowNoTitle">true</item> <!-- Opcional si no quiero título en la barra de acciones -->
         <item name="windowActionBar">true</item> <!-- Habilita la ActionBar -->
         <!-- Opciones adicionales para personalizar el Toolbar -->
         <item name="colorPrimary">@color/colorPrimary</item>
