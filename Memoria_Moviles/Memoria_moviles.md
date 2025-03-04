@@ -1,6 +1,6 @@
 
 ## Sara Martínez  &nbsp;&nbsp;&nbsp;&nbsp; 2DAM
-https://github.com/Saykek/FitFusion.git
+https://github.com/Saykek/FitFusionAPP.git
 
 # FITFUSIONapp
 
