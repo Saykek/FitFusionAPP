@@ -8,11 +8,14 @@
 
 
 
-        <color name="colorPrimary">#6200EE</color> <!-- Color de fondo para el Toolbar -->
-        <color name="colorPrimaryDark">#3700B3</color> <!-- Color para la barra de estado (opcional) -->
-        <color name="colorAccent">#03DAC5</color> <!-- Color de acento para elementos de la interfaz -->
+        <color name="colorPrimary">#80BEB0</color> <!-- Color de fondo para el Toolbar -->
+        <color name="colorPrimaryDark">#4C7A6C</color> <!-- Color para la barra de estado (opcional) -->
+        <color name="colorAccent">#B8E6DB</color> <!-- Color de acento para elementos de la interfaz -->
         <color name="colorBackground">#FFFFFF</color> <!-- Color de fondo general -->
 
+    <!-- Colores personalizados para los botones -->
+    <color name="colorButtonBackground">#80BEB0</color> <!-- Color de fondo del botón -->
+    <color name="colorButtonText">#FFFFFF</color> <!-- Color del texto del botón -->
 
     // COLORES :
 

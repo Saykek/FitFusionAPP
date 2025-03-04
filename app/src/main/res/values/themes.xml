@@ -1,9 +1,17 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="Base.Theme.FitFusionApp" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
-    </style>
+        <!-- Opciones adicionales para personalizar el Toolbar -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+    // BOTONES
+    <item name="colorButtonNormal">@color/colorButtonBackground</item>
+
+</style>
+
 
     <style name="Theme.FitFusionApp" parent="Base.Theme.FitFusionApp" />
+
 </resources>

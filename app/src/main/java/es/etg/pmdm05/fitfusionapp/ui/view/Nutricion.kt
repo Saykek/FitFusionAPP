@@ -1,6 +1,7 @@
 package es.etg.pmdm05.fitfusionapp.ui.view
 
 import android.os.Bundle
+import android.view.MenuItem
 import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
@@ -19,8 +20,11 @@ class Nutricion : AppCompatActivity() {
 
 
 //TOOLBAR
+        setSupportActionBar(binding.toolbar)
         val frasesMenus = getString(R.string.frase_menus)
         binding.toolbar.setTitle("$frasesMenus ")
+        supportActionBar?.setDisplayShowHomeEnabled(true)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
         setSupportActionBar(binding.toolbar)
 
 //para que se oculte la actividad
@@ -48,5 +52,15 @@ class Nutricion : AppCompatActivity() {
         val transaccion = supportFragmentManager.beginTransaction() //iniciamos nueva transaccion
         transaccion.replace(binding.fragmentContainer.id, fragment)
         transaccion.commit()
+    }
+    // Manejo de la flecha de regreso
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return when (item.itemId) {
+            android.R.id.home -> {
+                onBackPressedDispatcher.onBackPressed()  // Para manejar el retroceso
+                true
+            }
+            else -> super.onOptionsItemSelected(item)
+        }
     }
 }

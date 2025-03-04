@@ -5,12 +5,12 @@
 
         <item name="windowNoTitle">false</item> <!-- Opcional si no quiero título en la barra de acciones -->
         <item name="windowActionBar">true</item> <!-- Habilita la ActionBar -->
-        <!-- Opciones adicionales para personalizar el Toolbar -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+
 
     </style>
+
+
+
 
     <style name="ToolbarTheme" parent="Widget.AppCompat.Toolbar">
         <item name="android:background">@color/colorPrimary</item> <!-- Color de fondo del Toolbar -->
