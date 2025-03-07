@@ -1,0 +1,3 @@
+[submodule "FitFusion"]
+	path = FitFusion
+	url = https://github.com/usuario/FitFusion.git
