@@ -25,6 +25,7 @@ https://github.com/Saykek/FitFusionAPP.git
   - [10. Información técnica](#10-información-técnica)
   - [11. Innovaciones y problemas](#11-innovaciones-y-problemas)
   - [12. Conclusiones](#12-conclusiones)
+  - [13. Funcionalidad a probar](#13-funcionalidad-a-probar)
 
 ## 1. Contexto de la aplicación
 
@@ -219,3 +220,8 @@ FitFusionApp es una aplicación diseñada para ayudar a los usuarios a mejorar s
 
 ## 12. Conclusiones
  &nbsp;&nbsp;&nbsp;&nbsp;Soy consciente del tiempo del que dispongo(y aún así le he dedicado muchas horas) y aunque he creado un gimnasio al final es otra aplicación (aunque conserve la esencia)y estoy bastante contenta de como ha quedado, con ganas de haberle metido muchas más funcionalidades(como cargar los ejercicios, como te comente que en otra versión que tengo lo tengo casi implementado)
+
+ ## 13. Funcionalidad a probar
+ &nbsp;&nbsp;&nbsp;&nbsp;Aquí te explico lo que tiene funcionalidad en la aplicación.En la primera activity solo funciona "iniciar sesión". En la siguiente se puede meter cualquier usuario, pero la contraseña no no hace falta. En la activity de menú principal de los 5 botones solo funciona el botón de Entrenamiento y el botón de Nutrición. Por otro lado el botón que hay en la toolbar también funciona mostrando el tiempo.
+ - El botón Entrenamiento nos lleva a otra activity y ahi solo está activo "por objetivo" que sale por defecto, pero se puede elegir otro modo que nos mostrará no disponible, y la flecha de vuelta atrás de la toolbar.
+ - El botón Nutrición nos muestra tres botones pero solo esta activo "Menús", y este tiene el spinner activo pero sin funcionalidad, y los botones de las 4 semanas que si están activos, también esta activa la flecha de regreso de la toolbar.
